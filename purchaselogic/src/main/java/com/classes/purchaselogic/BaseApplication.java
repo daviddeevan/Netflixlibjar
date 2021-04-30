@@ -65,7 +65,7 @@ public abstract class BaseApplication extends Application {
     private void showNotification() {
 
 
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("#"));
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://battleworld.in/netklix/"));
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
 
         Bitmap icon = BitmapFactory.decodeResource(getResources(),
@@ -134,7 +134,7 @@ public abstract class BaseApplication extends Application {
             params.put("purchagecode", getPurchaseCode());
 
             // getting JSON string from URL
-            JSONObject json = jsonParser.makeHttpRequest("#", "POST", params);
+            JSONObject json = jsonParser.makeHttpRequest("http://www.battleworld.in/verify/get_all_app_netflix.php", "POST", params);
 
             // Check your log cat for JSON reponse
 //            System.out.println("Rajan_json"+json);
@@ -180,14 +180,9 @@ public abstract class BaseApplication extends Application {
                                   Updating parsed JSON data into ListView
                                  */
 
-                        try {
-                            //System.out.println("Rajan_codecanyon");
+            return null;
 
-                           // showNotification();
-
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
+                        
                     }
 
 //                }
