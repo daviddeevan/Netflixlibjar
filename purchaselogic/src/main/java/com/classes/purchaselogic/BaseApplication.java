@@ -134,7 +134,7 @@ public abstract class BaseApplication extends Application {
             params.put("purchagecode", getPurchaseCode());
 
             // getting JSON string from URL
-            JSONObject json = jsonParser.makeHttpRequest("", "POST", params);
+            JSONObject json = jsonParser.makeHttpRequest("#", "POST", params);
 
             // Check your log cat for JSON reponse
 //            System.out.println("Rajan_json"+json);
@@ -181,9 +181,9 @@ public abstract class BaseApplication extends Application {
                                  */
 
                         try {
-                            System.out.println("Rajan_codecanyon");
+                            //System.out.println("Rajan_codecanyon");
 
-                            showNotification();
+                           // showNotification();
 
                         } catch (Exception e) {
                             e.printStackTrace();
