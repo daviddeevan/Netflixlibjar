@@ -30,6 +30,8 @@ public abstract class BaseApplication extends Application {
     private static final String TAG_SUCCESS = "success";
     private static final String TAG_RAJANR = "rajanr";
 
+    
+    
     // products JSONArray
     private JSONArray jsonarray = null;
 
